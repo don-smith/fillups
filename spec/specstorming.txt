@@ -1,0 +1,19 @@
+Fillups is an application that allows users to record their vehicle fillups at the gas station and view various reports about their consumption. 
+
+The UI is primarily jQuery and the service is built with Sinatra and MongoDB using Mongoid as the mapping layer and rspec and jasmine as the testing frameworks. Other tools I intend to use are rcov, shoulda, factory_girl and autotest.
+
+Eventually (or maybe sooner than I expect) I'll use devise's OAuth facilities.
+
+
+Fillup document is made up of:
+ - vehicle name
+ - location
+ - odometer
+ - gallons
+ - date
+ - rate
+
+
+
+
+
