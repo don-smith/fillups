@@ -1,12 +1,12 @@
 require File.join(File.dirname(__FILE__), '..', 'config', 'config')
-require File.join(File.dirname(__FILE__), '..', 'api', 'service')
+require File.join(File.dirname(__FILE__), '..', 'router')
 
-require 'rubygems'
 require 'sinatra'
 require 'rack/test'
 require 'rspec'
 require 'rspec/autorun'
 require 'mongoid'
+require 'webrat'
 
 # set test environment
 set :environment, :test
