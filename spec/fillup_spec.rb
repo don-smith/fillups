@@ -1,4 +1,4 @@
-require File.join(File.dirname(__FILE__), '..', 'spec_helper')
+require 'spec_helper'
 require 'fillup'
 
 describe Fillup do
@@ -14,14 +14,15 @@ describe Fillup do
   end
   
   it 'can be saved' do
-    fillup = Fillup.new(
+    fillup = Fillup.create!(
       :vehicle_name => 'Jeep',
       :location => 'Snohomish 76',
+      :date => Date.new(2010, 10, 10).to_s,
       :odometer => 97657,
       :gallons => 15.679,
-      :date => Date.new(2010, 10, 10).to_s,
       :rate => 2.983)
-    fillup.save
+    found_fillup = Fillup.first(:conditions => {:odometer => "97657"})
+    found_fillup.vehicle_name.should == fillup.vehicle_name 
   end
   
 end
