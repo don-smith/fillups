@@ -1,5 +1,6 @@
 require 'sinatra'
+require File.join(File.dirname(__FILE__), 'lib', 'fillup')
 
 get '/' do
-  "so far, so good"
+  Fillup.all().to_json
 end

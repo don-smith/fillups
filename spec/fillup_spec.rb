@@ -24,5 +24,5 @@ describe Fillup do
     found_fillup = Fillup.first(:conditions => {:odometer => "97657"})
     found_fillup.vehicle_name.should == fillup.vehicle_name 
   end
-  
+
 end

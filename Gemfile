@@ -9,8 +9,8 @@ gem 'mongoid'
 group :development, :test do
 	gem 'rspec'
 	gem 'autotest'
-	# gem 'autotest-growl'
-	# gem 'autotest-fsevent' # commented out for heroku
+	gem 'autotest-growl'
+	gem 'autotest-fsevent' # commented out for heroku
 	# gem 'factory_girl'
 	# gem 'jasmine'
 	# gem 'launchy'
