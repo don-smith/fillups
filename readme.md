@@ -6,4 +6,4 @@ The UI will primarily be jQuery/jQTouch with PhoneGap and the service will be bu
 
 I'm also very interested in using Devise's OAuth facilities.
 
-_Please stay tuned ..._
+_Stay tuned ..._
