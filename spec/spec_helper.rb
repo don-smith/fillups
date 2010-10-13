@@ -1,12 +1,12 @@
 ENV['RACK_ENV'] ||= 'test'
 
 require File.join(File.dirname(__FILE__), '..', 'config', 'config')
-require File.join(File.dirname(__FILE__), '..', 'router')
 
 require 'sinatra'
 require 'rack/test'
 require 'rspec/autorun'
 require 'mongoid'
+require 'factories'
 
 # set test environment
 set :environment, :test

@@ -14,14 +14,8 @@ describe Fillup do
   end
   
   it 'can be saved' do
-    fillup = Fillup.create!(
-      :vehicle_name => 'Jeep',
-      :location => 'Snohomish 76',
-      :date => Date.new(2010, 10, 10).to_s,
-      :odometer => 97657,
-      :gallons => 15.679,
-      :rate => 2.983)
-    found_fillup = Fillup.first(:conditions => {:odometer => "97657"})
+    fillup = Factory(:fillup)
+    found_fillup = Fillup.first(:conditions => {:odometer => "12345"})
     found_fillup.vehicle_name.should == fillup.vehicle_name 
   end
 

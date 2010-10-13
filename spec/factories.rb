@@ -1,5 +1,9 @@
-require 'sinatra'
-require 'fillup'
+def Factory(type)
+  case type
+    when :fillup
+      return create_fillup
+  end
+end
 
 def create_fillup
   Fillup.create!(:vehicle_name => 'Jeep',
@@ -10,8 +14,4 @@ def create_fillup
                  :rate => 3.012)
 end
 
-get '/' do
-  "love?"
-  # create_fillup
-  # Fillup.all().to_json
-end
+
