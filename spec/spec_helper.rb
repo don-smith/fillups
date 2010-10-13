@@ -7,6 +7,7 @@ require 'rack/test'
 require 'rspec/autorun'
 require 'mongoid'
 require 'factories'
+require 'router'
 
 # set test environment
 set :environment, :test
