@@ -1,5 +1,4 @@
 require 'yaml'
-require 'sinatra'
 require 'mongoid'
 
 # Add to $LOADPATH

@@ -1,3 +1,4 @@
+# require 'sinatra'
 require 'fillup'
 
 get '/' do
